@@ -4,3 +4,13 @@
 
 layout: home
 ---
+<h2>Posts in Jekyll</h2>
+<ul>
+  {% for post in site.posts %}
+    {% if post.categories contains "jekyll" %}
+      <li>
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
