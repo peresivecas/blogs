@@ -1,3 +1,5 @@
 layout: page
 title: "page"
-permalink: /
+permalink: /arch_blog
+
+# Hello world
